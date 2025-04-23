@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=3 uid="uid://vyltmqeid1ac"]
+
+[ext_resource type="Script" uid="uid://dyoxj0fyapatc" path="res://bugger.gd" id="1_bsekb"]
+[ext_resource type="Texture2D" uid="uid://7ml5jv2i8l6h" path="res://icon.svg" id="2_24kqy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3dbqr"]
+size = Vector2(130, 130)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_njov2"]
+bg_color = Color(0, 0, 0, 0)
+border_color = Color(0, 0, 0, 0)
+shadow_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Theme" id="Theme_4w174"]
+Button/styles/disabled = SubResource("StyleBoxFlat_njov2")
+Button/styles/focus = SubResource("StyleBoxFlat_njov2")
+Button/styles/hover = SubResource("StyleBoxFlat_njov2")
+Button/styles/normal = SubResource("StyleBoxFlat_njov2")
+Button/styles/pressed = SubResource("StyleBoxFlat_njov2")
+
+[node name="Bugger" type="CharacterBody2D"]
+script = ExtResource("1_bsekb")
+
+[node name="BuggerSprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_24kqy")
+
+[node name="BuggerShape" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3dbqr")
+
+[node name="HitBox" type="Button" parent="."]
+offset_left = -65.0
+offset_top = -65.0
+offset_right = 65.0
+offset_bottom = 65.0
+theme = SubResource("Theme_4w174")
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
+
+[node name="CritBox" type="Button" parent="."]
+offset_left = -16.25
+offset_top = -16.25
+offset_right = 16.25
+offset_bottom = 16.25
+theme = SubResource("Theme_4w174")
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
+
+[connection signal="pressed" from="HitBox" to="." method="_on_hit_box_pressed"]
+[connection signal="pressed" from="CritBox" to="." method="_on_crit_box_pressed"]
