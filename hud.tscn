@@ -16,11 +16,12 @@ shadow_color = Color(0, 0, 0, 0.501961)
 follow_viewport_enabled = true
 
 [node name="StoreButton" type="Button" parent="."]
+layout_direction = 2
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -49.0
-offset_bottom = 31.0
+offset_left = -200.0
+offset_bottom = 120.0
 grow_horizontal = 0
 text = "Store"
 language = "en_US"

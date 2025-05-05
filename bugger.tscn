@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://vyltmqeid1ac"]
+[gd_scene load_steps=7 format=3 uid="uid://vyltmqeid1ac"]
 
 [ext_resource type="Script" uid="uid://dyoxj0fyapatc" path="res://bugger.gd" id="1_bsekb"]
 [ext_resource type="Texture2D" uid="uid://7ml5jv2i8l6h" path="res://icon.svg" id="2_24kqy"]
+[ext_resource type="Theme" uid="uid://bhp2krxqhewex" path="res://critbox_theme.tres" id="3_24kqy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3dbqr"]
 size = Vector2(130, 130)
@@ -45,7 +46,7 @@ offset_left = -16.25
 offset_top = -16.25
 offset_right = 16.25
 offset_bottom = 16.25
-theme = SubResource("Theme_4w174")
+theme = ExtResource("3_24kqy")
 theme_override_colors/icon_disabled_color = Color(0, 0, 0, 0)
 theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 0)
 theme_override_colors/icon_hover_color = Color(0, 0, 0, 0)

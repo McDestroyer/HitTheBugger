@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://d00mp05d6akrw"]
+
+[ext_resource type="Texture2D" uid="uid://b8noaw85q0bac" path="res://icons/JF_Logo_2.0_3D_Colored.png" id="1_3hi0p"]
+[ext_resource type="Texture2D" uid="uid://dsfoxfex1swag" path="res://icons/JF Logo 2.0 3D Colored Clear Background.png" id="2_x7ts4"]
+[ext_resource type="Texture2D" uid="uid://7ml5jv2i8l6h" path="res://icon.svg" id="3_s3f3m"]
+[ext_resource type="Texture2D" uid="uid://cyv5m6lxs8kpq" path="res://icons/JF Logo 2.0 3D Colored Tiny.png" id="3_x7ts4"]
+
+[node name="StatusIndicator" type="ItemList"]
+custom_minimum_size = Vector2(0, 600)
+select_mode = 2
+max_text_lines = 2
+auto_width = true
+text_overrun_behavior = 4
+item_count = 6
+max_columns = 5
+same_column_width = true
+fixed_column_width = 150
+icon_mode = 0
+fixed_icon_size = Vector2i(150, 150)
+item_0/text = "Item 1"
+item_0/icon = ExtResource("1_3hi0p")
+item_1/text = "Item 2. this is a lon"
+item_1/icon = ExtResource("2_x7ts4")
+item_2/text = "3"
+item_2/icon = ExtResource("3_s3f3m")
+item_3/text = "4"
+item_3/icon = ExtResource("3_s3f3m")
+item_4/text = "5"
+item_4/icon = ExtResource("3_s3f3m")
+item_5/text = "6"
+item_5/icon = ExtResource("3_x7ts4")

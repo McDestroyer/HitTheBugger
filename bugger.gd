@@ -59,6 +59,7 @@ func _physics_process(delta):
 		move_and_slide()
 
 ## Generates a new goal position and speed with which to move towards it.
+@warning_ignore("narrowing_conversion")
 func generate_goal():
 	# Generate the position to move to.
 	goal.x = randi_range(
